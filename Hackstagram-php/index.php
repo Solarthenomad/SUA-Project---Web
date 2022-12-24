@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $connect = mysqli_connect() or die();
+    $query = "select * from board order by number desc";
+    $result = mysqli_query($connect, $query);
+    $totla = mysqli_num_rows($result);
+
+    session_start();
+
+    if (isset($_SESSION['userid'])){
+        
+    }
+    ?>
+    
+</body>
+</html>
